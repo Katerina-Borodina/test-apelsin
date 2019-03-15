@@ -1,0 +1,113 @@
+.box
+  overflow: hidden
+  width: 100%
+.service
+  display: flex
+  height: 670px
+  overflow: hidden
+  width: 130%
+  margin: 0 -15%
+  &_block
+    width: 15%
+    height: 100%
+    transform: skewX(-15deg)
+    transition: width .5s ease-out
+    position: relative
+    z-index: 1
+    overflow: hidden
+    margin: 0 -1px
+    .service_text
+      display: flex
+      flex-direction: column
+      transform: skewX(15deg)
+      padding: 50px 15% 40px
+      height: 100%
+      h3
+        font-weight: 900
+        font-size: 45px
+        margin: 30px 0
+      h4
+        font-size: 16px
+        margin: 20px 0
+        font-family: 'Roboto', sans-serif
+        line-height: 1.8
+        font-weight: 900
+      ul
+        margin: 0
+        padding: 0
+        list-style: none
+        li
+          padding: 0 0 0 20px
+          position: relative
+          font-family: 'Roboto', sans-serif
+          font-size: 16px
+          line-height: 1.8
+          &:before
+            position: absolute
+            content: ""
+            width: 8px
+            height: 8px
+            background-color: #1c7fff
+            border-radius: 4px
+            left: 0
+            top: 9px
+  &_item
+    position: relative
+    height: 100%
+    width: 100%
+    overflow: hidden
+    background: rgba(0,0,0,0.7)
+  &_img
+    background: no-repeat center
+    background-size: cover
+    width: 200%
+    height: 100%
+    position: absolute
+    z-index: -1
+    transform: skewX(15deg) translate(-50%)
+    left: 65%
+  &_title
+    width: 100%
+    height: 100%
+    transform: skewX(15deg) rotate(-75deg)
+    color: #808080
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 60px
+    margin: 0
+    line-height: 1
+    font-weight: 900
+    font-family: 'GothamPro', sans-serif
+
+.box .service .service_block .service_item .service_text
+  display: none
+.box .service .service_block.active .service_item
+  background: rgba(255,255,255,0.9)
+.box .service .service_block.active
+  width: 30%
+.box .service .service_block.active .service_title
+  display: none
+.box .service .service_block.active .service_text
+  display: flex
+  flex-direction: column
+  transform: skewX(15deg)
+  padding: 50px 15% 40px
+  height: 100%
+.box .service .service_block:first-child
+  width: 25%
+.box .service .service_block:first-child.active
+  width: 40%
+.box .service .service_block:first-child .service_item .service_title
+  padding-top: 50%
+.box .service .service_block:first-child .service_text
+  padding: 50px 12% 40px 40%
+.box .service .service_block:last-child
+  width: 25%
+.box .service .service_block:last-child.active
+  width: 40%
+.box .service .service_block:last-child .service_item .service_title
+  padding-bottom: 50%
+.box .service .service_block:last-child .service_text
+  padding: 50px 40% 40px 12%

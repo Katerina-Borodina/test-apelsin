@@ -1,0 +1,193 @@
+@media screen and (max-width: 1279px)
+  .box
+    .service
+      //height: 440px
+      //width: 100%
+      margin: 0
+      &_block
+        transform: skewX(0deg)
+        margin: 0
+        width: 12%
+      &_img
+        transform: skewX(0) translate(-50%)
+      &_title
+        transform: skewX(0) rotate(-90deg)
+        font-size: 36px
+      &_text
+        transform: skewX(0deg)!important
+
+  .service_block.active
+    width: 52%
+  .service_block.active .text
+    transform: skewX(0)
+    padding: 35px 45px
+  .service_block.active .text h3
+    font-size: 36px
+    margin: 25px 0
+  .service_block.active .text h4
+    font-size: 14px
+    margin: 10px 0
+    line-height: 1.5
+  .service_block.active .text ul li
+    font-size: 14px
+    line-height: 1.5
+  .service_block.active .text ul li:before
+    top: 7px
+  .service_block:first-child
+    width: 12%!important
+  .service_block:first-child.active
+    width: 52%
+  .service_block:first-child.active .text
+    padding: 35px 45px
+  .service_block:first-child .service_item .service_title
+    padding-top: 0
+  .service_block:first-child .text
+    padding: 50px 12% 40px 40%
+  .service_block:last-child
+    width: 12%
+  .service_block:last-child.active
+    width: 52%
+  .service_block:last-child.active .text
+    padding: 35px 45px
+  .service_block:last-child .service_item .service_title
+    padding-bottom: 0
+  .service_block:last-child .text
+    padding: 50px 40% 40px 12%
+
+
+@media screen and (max-width: 1150px)
+  .service_block .service_text h3
+    font-size: 40px
+  .reviews_text h3
+    font-size: 36px
+  .button
+    margin-top: 0!important
+
+@media screen and (max-width: 1024px)
+  .box .service .service_block.active .service_text
+    padding: 40px 8% 40px
+
+@media screen and (max-width: 1000px)
+  .service_block .service_text h3
+    font-size: 38px
+  .box .service .service_block.active .service_text
+    padding: 40px 10% 40px
+  .reviews_text
+    width: 50%
+  .reviews_img
+    width: 50%
+
+@media (min-width: 992px)
+  .container
+    max-width: 960px
+
+
+@media screen and (max-width: 768px)
+  .box
+    .service
+      flex-direction: column
+      height: auto
+      width: 100%
+      &_block
+        width: 100%
+      &_item
+        height: 100%
+        transition: height 1s ease
+      &_title
+        transform: rotate(0deg)
+        font-size: 24px
+        padding: 0 0 10px 0
+        margin: 10px 0 0 0
+  .service_block.active
+    width: 100%!important
+  .service_block.active .text
+    padding: 0 18px 30px
+  .service_block.active h3
+    font-size: 24px
+    margin: 25px
+    text-align: center
+  .service_block.active h4
+    font-size: 12px
+    margin: 0
+  .service_block.active ul li
+    font-size: 12px
+  .service_block.active .service_item.active
+    height: auto
+  .service_block:first-child
+    width: 100%!important
+  .service_block:first-child.active
+    width: 100%
+  .service_block:first-child.active .text
+    padding: 0 18px 30px
+  .service_block:first-child .service_item .service_title
+    padding-top: 0!important
+  .service_block:last-child
+    width: 100%!important
+  .service_block:last-child.active
+    width: 100%
+  .service_block:last-child.active .text
+    padding: 0 18px 30px
+  .service_block:last-child .service_item .service_title
+    padding-bottom: 0!important
+  .service_block.active .service_text
+    padding: 0 10% 30px!important
+  .button
+    margin-top: 50px!important
+    margin-left: -105px
+  .reviews
+    padding-top: 20px
+    margin-bottom: 30px
+    &_text
+      width: 50%
+    &_img
+      width: 50%
+      .rev
+        img
+          padding: 5px 5px 5px 5px
+        &:nth-child(2)
+          img
+            padding: 15px 15px 15px 15px
+        &:nth-child(4)
+          img
+            padding: 15px 15px 15px 15px
+        &:nth-child(5)
+          img
+            padding: 20px 20px 20px 20px
+        &:nth-child(6)
+          img
+            padding: 20px 20px 20px 20px
+        &:nth-child(7)
+          img
+            padding: 20px 20px 20px 20px
+        &:nth-child(8)
+          img
+            padding: 20px 20px 20px 20px
+
+
+@media screen and (max-width: 480px)
+  .reviews
+    &_text
+      width: 100%
+      h3
+        font-size: 24px
+        text-align: center
+        padding: 0
+      p
+        font-size: 12px
+        padding: 0 10px
+        text-align: center
+      span
+        font-weight: 300!important
+    &_img
+      width: 100%
+    .button
+      margin-top: 10px !important
+      margin-left: 46px
+      padding: 14px 14px
+
+@media screen and (max-width: 375px)
+  .reviews .button
+    margin-left: 72px
+@media screen and (max-width: 425px)
+  .reviews .button
+    margin-left: 100px
